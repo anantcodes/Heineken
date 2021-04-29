@@ -12,9 +12,14 @@ struct ContentView: View {
     var body: some View {
         NavigationView{
             VStack{
-                Text("Beer essentials")
-                    .padding()
-                    .navigationTitle("Heineken")
+                
+                    
+                List {
+                       Text("Malted barley")
+                       Text("Hops")
+                       Text("Yeast")
+                       Text("Water")
+                   }.navigationTitle("Heineken")
                 Spacer()
             }
           
