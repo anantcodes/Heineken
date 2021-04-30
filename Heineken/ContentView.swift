@@ -20,8 +20,16 @@ struct ContentView: View {
                        Text("Yeast")
                        Text("Water")
                    }.navigationTitle("Heineken")
+                List {
+                       Text("Malted barley")
+                       Text("Hops")
+                       Text("Yeast")
+                       Text("Water")
+                   }
                 Spacer()
             }
+            
+            
           
             
         }
