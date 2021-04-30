@@ -10,30 +10,40 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        NavigationView{
-            VStack{
-                
+        VStack{
+            NavigationView{
+                VStack{
                     
-                List {
-                       Text("Malted barley")
-                       Text("Hops")
-                       Text("Yeast")
-                       Text("Water")
-                   }.navigationTitle("Heineken")
-                List {
-                       Text("Malted barley")
-                       Text("Hops")
-                       Text("Yeast")
-                       Text("Water")
-                   }
-                Spacer()
+                        
+                    List {
+                           Text("Malted barley")
+                           Text("Hops")
+                           Text("Yeast")
+                           Text("Water")
+                       }.navigationTitle("Heineken")
+                }
             }
             
             
-          
+            NavigationView{
+                VStack{
+                    
+                        
+                    List {
+                           Text("Malted barley")
+                           Text("Hops")
+                           Text("Yeast")
+                           Text("Water")
+                       }.navigationTitle("Heineken")
+                }
+            }
+           
             
+            
+        
+            
+        
         }
-      
             
     }
 }
