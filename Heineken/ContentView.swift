@@ -7,44 +7,18 @@
 
 import SwiftUI
 
+let columns: [GridItem] = [GridItem(.flexible()),
+                           GridItem(.flexible()),
+                           GridItem(.flexible()),]
+
 struct ContentView: View {
-    
     var body: some View {
-        VStack{
-            NavigationView{
-                VStack{
-                    
-                        
-                    List {
-                           Text("Malted barley")
-                           Text("Hops")
-                           Text("Yeast")
-                           Text("Water")
-                       }.navigationTitle("Heineken")
-                }
-            }
-            
-            
-            NavigationView{
-                VStack{
-                    
-                        
-                    List {
-                           Text("Malted barley")
-                           Text("Hops")
-                           Text("Yeast")
-                           Text("Water")
-                       }.navigationTitle("Heineken")
-                }
-            }
-           
-            
-            
-        
-            
-        
+        LazyVGrid(columns: columns) {
+            /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
+            /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
+            /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
         }
-            
+             
     }
 }
 
