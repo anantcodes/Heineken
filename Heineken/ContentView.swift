@@ -14,9 +14,13 @@ let columns: [GridItem] = [GridItem(.flexible()),
 struct ContentView: View {
     var body: some View {
         LazyVGrid(columns: columns) {
-            /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
-            /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
-            /*@START_MENU_TOKEN@*/Text("Placeholder")/*@END_MENU_TOKEN@*/
+            ForEach(0..<9) { i in
+                ZStack{
+                    Circle()
+                        .foregroundColor(.red).opacity(0.5)
+                    
+                }
+            }
         }
              
     }
