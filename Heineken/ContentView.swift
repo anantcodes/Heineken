@@ -43,6 +43,12 @@ struct ContentView: View {
                             //check for win or draw
                             if checkWinCondition(for: .human, in: moves){
                                 print("Human wins")
+                                return
+                            }
+                            
+                            if checkForDraw(in: moves){
+                                print("Draw")
+                                return
                             }
                             
                             DispatchQueue.main.asyncAfter(deadline: .now() + 0.5){
@@ -52,6 +58,11 @@ struct ContentView: View {
                                 
                                 if checkWinCondition(for: .computer, in: moves){
                                     print("Computer wins")
+                                    return
+                                }
+                                if checkForDraw(in: moves){
+                                    print("Draw")
+                                    return
                                 }
                             }
                         }
@@ -87,6 +98,10 @@ struct ContentView: View {
             return true
         }
         return false
+    }
+    
+    func checkForDraw(in moves: [Move?]) -> Bool {
+        return moves.compactMap{ $0 }.count == 9
     }
 }
 
