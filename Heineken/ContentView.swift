@@ -88,6 +88,22 @@ struct ContentView: View {
     }
     
     func determineComputerMovePosition(in moves:[Move?]) -> Int{
+        
+        let winPatterns: Set<Set<Int>> = [[0, 1, 2],[3,4,5],[6,7,8],[0,3,6],[1,4,7],[2,5,8],[0,4,8],[2,4,6]]
+        
+        let computerMoves = moves.compactMap { $0 }.filter { $0.player == .computer }
+        let computerPositions = Set(computerMoves.map { $0.boardIndex })
+        
+        for pattern in winPatterns {
+            let winPositions = pattern.subtracting(computerPositions)
+            
+            if winPositions.count == 1 {
+                let isAvailable = !isSquareOccupied(in: moves, forIndex: winPositions.first!)
+                if isAvailable { return winPositions.first! }
+            }
+        }
+        
+        
         var movePosition = Int.random(in: 0..<9)
         
         while isSquareOccupied(in: moves, forIndex: movePosition){
