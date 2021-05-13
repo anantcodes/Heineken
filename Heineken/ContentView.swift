@@ -149,10 +149,9 @@ struct Move{
 }
 
 
-
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
 }
+// commercial sf addition
