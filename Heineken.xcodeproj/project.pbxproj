@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0E06F5732646754C000F5269 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06F5722646754C000F5269 /* Alerts.swift */; };
+		0E99F330265B87250060B63A /* GViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E99F32F265B87250060B63A /* GViewModel.swift */; };
 		0EDDD33A26399B3A00F2603B /* HeinekenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDD33926399B3A00F2603B /* HeinekenApp.swift */; };
-		0EDDD33C26399B3B00F2603B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDD33B26399B3B00F2603B /* ContentView.swift */; };
+		0EDDD33C26399B3B00F2603B /* GView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDDD33B26399B3B00F2603B /* GView.swift */; };
 		0EDDD33E26399B3E00F2603B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EDDD33D26399B3E00F2603B /* Assets.xcassets */; };
 		0EDDD34126399B3E00F2603B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EDDD34026399B3E00F2603B /* Preview Assets.xcassets */; };
 		0EDDD34A26399CB700F2603B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0EDDD34926399CB700F2603B /* README.md */; };
@@ -17,9 +18,10 @@
 
 /* Begin PBXFileReference section */
 		0E06F5722646754C000F5269 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
+		0E99F32F265B87250060B63A /* GViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GViewModel.swift; sourceTree = "<group>"; };
 		0EDDD33626399B3A00F2603B /* Heineken.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heineken.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EDDD33926399B3A00F2603B /* HeinekenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeinekenApp.swift; sourceTree = "<group>"; };
-		0EDDD33B26399B3B00F2603B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0EDDD33B26399B3B00F2603B /* GView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GView.swift; sourceTree = "<group>"; };
 		0EDDD33D26399B3E00F2603B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EDDD34026399B3E00F2603B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0EDDD34226399B3E00F2603B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,7 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				0EDDD33926399B3A00F2603B /* HeinekenApp.swift */,
-				0EDDD33B26399B3B00F2603B /* ContentView.swift */,
+				0EDDD33B26399B3B00F2603B /* GView.swift */,
+				0E99F32F265B87250060B63A /* GViewModel.swift */,
 				0E06F5722646754C000F5269 /* Alerts.swift */,
 				0EDDD33D26399B3E00F2603B /* Assets.xcassets */,
 				0EDDD34226399B3E00F2603B /* Info.plist */,
@@ -145,8 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0EDDD33C26399B3B00F2603B /* ContentView.swift in Sources */,
+				0EDDD33C26399B3B00F2603B /* GView.swift in Sources */,
 				0E06F5732646754C000F5269 /* Alerts.swift in Sources */,
+				0E99F330265B87250060B63A /* GViewModel.swift in Sources */,
 				0EDDD33A26399B3A00F2603B /* HeinekenApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
