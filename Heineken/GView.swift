@@ -19,9 +19,7 @@ struct GView: View {
                 LazyVGrid(columns: viewModel.columns,spacing:5) {
                     ForEach(0..<9) { i in
                         ZStack{
-                            Circle()
-                                .foregroundColor(.red).opacity(0.5)
-                                .frame(width: geometry.size.width/3 - 15, height: geometry.size.width/3 - 15)
+                            GSquareView(proxy: geometry)
                             
                             
                             Image(systemName: viewModel.moves[i]?.indicator ?? "")
@@ -67,3 +65,14 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
+
+struct GSquareView: View {
+    
+    var proxy: GeometryProxy
+    
+    var body: some View {
+        Circle()
+            .foregroundColor(.red).opacity(0.5)
+            .frame(width: proxy.size.width/3 - 15, height: proxy.size.width/3 - 15)
+    }
+}
