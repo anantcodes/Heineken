@@ -22,10 +22,7 @@ struct GView: View {
                             GSquareView(proxy: geometry)
                             
                             
-                            Image(systemName: viewModel.moves[i]?.indicator ?? "")
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                                .foregroundColor(.white)
+                            PlayerIndicator(systemImageName: viewModel.moves[i]?.indicator ?? "")
                         }
                         .onTapGesture {
                             viewModel.processPlayerMove(for: i)
@@ -74,5 +71,17 @@ struct GSquareView: View {
         Circle()
             .foregroundColor(.red).opacity(0.5)
             .frame(width: proxy.size.width/3 - 15, height: proxy.size.width/3 - 15)
+    }
+}
+
+struct PlayerIndicator: View {
+    
+    var systemImageName: String
+    
+    var body: some View {
+        Image(systemName: systemImageName)
+            .resizable()
+            .frame(width: 40, height: 40)
+            .foregroundColor(.white)
     }
 }
